@@ -1,0 +1,182 @@
+(1)..
+angle1 = int(input("Enter the first angle: "))
+angle2 = int(input("Enter the second angle: "))
+angle3 = int(input("Enter the third angle: "))
+
+if angle1 > 0 and angle2 > 0 and angle3 > 0 and (angle1 + angle2 + angle3 == 180):
+    print("This is a triangle.")
+else:
+    print("This is not triangle.")
+
+output==Enter the first angle: 40
+Enter the second angle: 60 
+Enter the third angle: 80
+This is a triangle.
+-----------------------------------------------------------------------------
+(2)..
+temp = int(input("Enter the temp number: "))
+humid = int(input("Enter the humid number: "))
+
+if temp > 30 and humid > 90:
+    print("hot and humid.")
+elif temp> 30 and humid <= 90:
+    print("hot.")
+elif temp <= 30 and humid > 90:
+    print("cool and humid.")
+elif temp <= 30 and humid<= 90:
+    print("cool.")
+else:
+    print("try again.")
+
+output==Enter the temp number: 30
+Enter the humid number: 55
+cool.
+-----------------------------------------------------------------------------
+(3)..
+cost = int(input("Enter the cost price: "))
+selling = int(input("Enter the selling price: "))
+
+if selling > cost:
+    profit = selling - cost
+    print(f"cost of profit: {profit}")
+elif selling < cost:
+    loss = cost - selling
+    print(f"selling of loss:  {loss}")
+else:
+    print("No profit no loss.")
+
+output==Enter the cost price: 1000
+Enter the selling price: 5555
+cost of profit: 4555
+------------------------------------------------------------------------------
+(4)..
+heads = int(input("Enter the total heads: "))
+legs = int(input("Enter the total legs: "))
+
+if legs % 2 != 0:
+    print("Invalid input..")
+else:
+    for dogs in range(heads + 1):
+        chickens = heads - dogs
+        if 4 * dogs + 2 * chickens == legs:
+            print(f"Number of dogs: {dogs}")
+            print(f"Number of chickens: {chickens}")
+            break
+    else:
+        print("try again.")
+
+output==Enter the total heads: 1
+Enter the total legs: 4
+Number of dogs: 1
+Number of chickens: 0
+------------------------------------------------------------------------------
+(5)..
+a=int(input("enter the number"))
+if(a%5==0  and a%11==0):
+    print("this is divigible by 5 and 11")
+else:
+    print("not divigible by 5 and 11")
+
+output==enter the number55
+this is divigible by 5 a 11
+----------------------------------------------------------------------------
+(6)..
+a = int(input("Enter the first angle: "))
+b = int(input("Enter the second angle: "))
+c = int(input("Enter the third angle: "))
+
+if a > 0 and b > 0 and c > 0:
+    if a + b + c == 180:
+        print("The triangle is valid.")
+    else:
+        print("The triangle is not valid.")
+else:
+    print("try again.")
+
+output==Enter the first angle: 40
+Enter the second angle: 60
+Enter the third angle: 80
+The triangle is valid.
+------------------------------------------------------------------------------
+(7)..
+a = int(input("Enter the first side: "))
+b = int(input("Enter the second side: "))
+c = int(input("Enter the third side: "))
+
+if a <= 0 or b <= 0 or c <= 0:
+    print("Invalid sides.")
+else:
+    if a == b == c:
+        print("The triangle is Equilateral.")
+    elif a == b or a == c or b == c:
+        print("The triangle is Isosceles.")
+    else:
+        print("scalen triangle")
+
+output==Enter the first side: 90
+Enter the second side: 90
+Enter the third side: 90
+The triangle is Equilateral.
+------------------------------------------------------------------------------
+(8)..
+units = float(input("Enter the number of units consumed: "))
+
+bill = 0
+
+if units <= 50:
+    bill = units * 2
+elif units <= 100:
+    bill = units * 5
+elif units <= 150:
+    bill = units* 10
+else:
+    bill = units * 15
+print(f"The total electricity bill is: {bill} Rs")
+
+output==Enter the number of units consumed: 250
+The total electricity bill is: 3750.0 Rs
+-----------------------------------------------------------------------------
+(9)..
+year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")
+else:
+    print(f"{year} is not a leap year.")
+
+output==Enter a year: 2016
+2016 is a leap year.
+-----------------------------------------------------------------------------
+(10)..
+n = int(input("Enter a number "))
+
+r = 0
+temp = n
+
+while temp > 0:
+    rem = temp % 10
+    r= r * 10 + rem
+    temp //= 10
+
+print(f"Reversed number: {r}")
+
+output==Enter a number 1547
+Reversed number: 7451
+--------------------------------------------------------------------------
+(11)..
+number = int(input("Enter a number: "))
+sum = 0
+temp = number
+while temp > 0:
+    digit = temp % 10
+    sum =sum+digit*digit*digit
+    temp //= 10
+
+if sum == number:
+    print(f"{number} is an Armstrong number.")
+else:
+    print(f"{number} is not an Armstrong number.")
+
+output==Enter a number: 153
+153 is an Armstrong number.
+-----------------------------------------------------------------------------
